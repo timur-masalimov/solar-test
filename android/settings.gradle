@@ -1,4 +1,4 @@
 rootProject.name = 'deimos'
-include ':pandora'
-project(':pandora').projectDir = new File(rootProject.projectDir, 'pandora')
+//include ':pandora'
+//project(':pandora').projectDir = new File(rootProject.projectDir, 'pandora')
 
