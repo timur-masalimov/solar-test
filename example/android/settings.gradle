@@ -1,7 +1,7 @@
 include ':app'
-include ':pandora'
+//include ':pandora'
 //project(':pandora').projectDir = new File(rootProject.projectDir, '../../../Saturn/pandora')
-project(':pandora').projectDir = new File(rootProject.projectDir, '../../android/libs/Saturn/pandora')
+//project(':pandora').projectDir = new File(rootProject.projectDir, '../../android/libs/Saturn/pandora')
 
 def localPropertiesFile = new File(rootProject.projectDir, "local.properties")
 def properties = new Properties()
