@@ -14,13 +14,10 @@ buildscript {
     }
 }
 
-rootProject.allprojects {
+allprojects {
     repositories {
         google()
         mavenCentral()
-        flatDir {
-            dirs project(':pandora').file("libs")
-        }
     }
 }
 
@@ -49,8 +46,7 @@ android {
     }
 
     dependencies {
-        implementation(name: 'pandora', ext: 'aar')
-//        implementation project(':pandora')
+        compileOnly files('libs/pandora-debug.aar')
         testImplementation 'org.jetbrains.kotlin:kotlin-test'
         testImplementation 'org.mockito:mockito-core:5.0.0'
     }
